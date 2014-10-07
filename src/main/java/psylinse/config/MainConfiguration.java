@@ -1,4 +1,4 @@
-package psylinse;
+package psylinse.config;
 
 import de.neuland.jade4j.JadeConfiguration;
 import de.neuland.jade4j.spring.template.SpringTemplateLoader;
