@@ -1,0 +1,9 @@
+{
+  groups: [{
+    name: "all",
+    resources: [{
+      type: "CSS",
+      uri: "classpath:css/*.less"
+    }]
+  }]
+}

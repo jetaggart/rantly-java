@@ -1,4 +1,4 @@
-package psylinse.config;
+package rantly.config;
 
 import de.neuland.jade4j.JadeConfiguration;
 import de.neuland.jade4j.spring.template.SpringTemplateLoader;
