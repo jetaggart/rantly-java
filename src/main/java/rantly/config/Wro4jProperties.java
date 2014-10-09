@@ -29,7 +29,7 @@ public class Wro4jProperties {
     }
 
     public boolean isDisableCache() {
-        return true;
+        return false;
     }
 
     public int getCacheUpdatePeriod() {

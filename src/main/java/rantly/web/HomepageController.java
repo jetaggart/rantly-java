@@ -9,9 +9,4 @@ public class HomepageController {
     public String home() {
         return "index";
     }
-
-    @RequestMapping("/something")
-    public String another() {
-        return "index";
-    }
 }
