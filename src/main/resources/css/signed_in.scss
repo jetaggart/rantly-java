@@ -1,0 +1,138 @@
+
+aside {
+  flex: 1;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  .profile-picture {
+    flex: 4;
+
+    img {
+      width: 150px;
+      height: 150px;
+      margin: auto;
+    }
+
+    .name {
+      text-align: center;
+      margin: 10px;
+
+      a {
+        font-size: 22px;
+        text-decoration: none;
+        color: $color-text;
+      }
+    }
+  }
+
+  form {
+    flex: 8;
+    width: 100%;
+
+    border-top: 1px solid $color-text;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    label {
+      flex: 1;
+      padding-top: 20px;
+    }
+
+    input[type=text] {
+      flex: 1;
+      color: black;
+      padding: 5px;
+    }
+
+    textarea {
+      flex: 8;
+      height: 100%;
+      color: $color-base;
+      padding: 5px;
+    }
+
+    input[type=submit] {
+      flex: 1;
+      @extend .button;
+      margin-top: 10px;
+    }
+  }
+}
+
+.main-content {
+  flex: 4;
+  background-color: white;
+  color: $color-base;
+  overflow-y: scroll;
+
+  h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-base;
+  }
+}
+
+li.rant {
+  @include clearfix;
+
+  height: 175px;
+  width: 800px;
+  margin: 0 auto;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 40%;
+    margin: 0 auto;
+    background: black;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .author {
+    float: left;
+    text-align: center;
+    height: 140px;
+
+    h4 {
+      width: 150px;
+    }
+
+    img {
+      width: 80px;
+    }
+
+    .image {
+      width: 100px;
+    }
+  }
+
+  .text {
+    float: left;
+    height: 125px;
+    width: 600px;
+    margin-left: 50px;
+  }
+
+  .actions {
+    float: right;
+  }
+}

@@ -3,7 +3,7 @@
     name: "all",
     resources: [{
       type: "CSS",
-      uri: "classpath:css/*.less"
+      uri: "classpath:css/application.scss"
     }]
   }]
 }

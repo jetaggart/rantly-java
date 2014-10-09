@@ -16,9 +16,9 @@ public class Wro4jProperties {
 
     private String uriLocators = "servletContext,classpath,uri";
 
-    private String preProcessors = "cssUrlRewriting,cssImport,semicolonAppender,lessCss";
+    private String preProcessors = "cssImport";
 
-    private String postProcessors = "cssVariables,cssMinJawr,jsMin";
+    private String postProcessors = "rubySassCss";
 
     private String hashStrategy = "MD5";
 

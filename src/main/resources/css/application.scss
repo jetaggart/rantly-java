@@ -1,0 +1,57 @@
+@import "colors.scss";
+@import "util.scss";
+@import "nav.scss";
+@import "signed_in.scss";
+@import "pages/homepage.scss";
+@import "pages/registration.scss";
+@import "pages/login.scss";
+@import "pages/following.scss";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: lighten($color-base, 20%);
+  color: $color-text;
+}
+
+.all-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 10;
+  display: flex;
+  flex-direction: row;
+}
+
+.notice {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.notice {
+  @extend .notice;
+  background-color: $color-accent;
+}
+
+.alert {
+  @extend .notice;
+  background-color: $color-error;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

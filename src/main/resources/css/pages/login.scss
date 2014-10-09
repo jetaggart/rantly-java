@@ -1,0 +1,12 @@
+section.login {
+  flex: 1;
+
+  form {
+    @extend .form-modal;
+  }
+
+  input[type=text], input[type=password] {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
